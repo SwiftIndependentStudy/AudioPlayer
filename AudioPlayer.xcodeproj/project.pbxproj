@@ -12,6 +12,7 @@
 		485052451CF8BE2200854751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485052431CF8BE2200854751 /* Main.storyboard */; };
 		485052471CF8BE2200854751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485052461CF8BE2200854751 /* Assets.xcassets */; };
 		4850524A1CF8BE2200854751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485052481CF8BE2200854751 /* LaunchScreen.storyboard */; };
+		485052541CF8BEE800854751 /* John Legend - All of Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 485052531CF8BEE800854751 /* John Legend - All of Me.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		485052461CF8BE2200854751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		485052491CF8BE2200854751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4850524B1CF8BE2200854751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485052531CF8BEE800854751 /* John Legend - All of Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "John Legend - All of Me.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4850523F1CF8BE2200854751 /* AppDelegate.swift */,
+				485052531CF8BEE800854751 /* John Legend - All of Me.mp3 */,
 				485052411CF8BE2200854751 /* ViewController.swift */,
 				485052431CF8BE2200854751 /* Main.storyboard */,
 				485052461CF8BE2200854751 /* Assets.xcassets */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					4850523B1CF8BE2200854751 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 665MGGYVAB;
 					};
 				};
 			};
@@ -122,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485052541CF8BEE800854751 /* John Legend - All of Me.mp3 in Resources */,
 				4850524A1CF8BE2200854751 /* LaunchScreen.storyboard in Resources */,
 				485052471CF8BE2200854751 /* Assets.xcassets in Resources */,
 				485052451CF8BE2200854751 /* Main.storyboard in Resources */,
@@ -251,10 +256,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AudioPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackattack.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +271,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AudioPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackattack.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
